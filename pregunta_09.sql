@@ -38,3 +38,11 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --
+SELECT 
+    [K1],
+    MIN([c21]),
+    [c22],
+    [c23],
+    [c24],
+    [c25]
+FROM tbl2
