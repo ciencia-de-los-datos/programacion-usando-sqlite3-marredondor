@@ -17,22 +17,5 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --
-import pandas as pd
-import sqlite3
 
-drivers = pd.read_csv('tbl1.csv', 
-                      sep=",", 
-                      header = None, 
-                      decimal=".",
-                      names = ['K0','K1','c12','c13','c14','c15','c16'])
-                      
-conn = sqlite3.connect(":memory:")  ## aca se indica el nombre de la db.
-cur = conn.cursor()
-
-drivers.to_sql(
-    name="drivers",
-    con=conn,
-    if_exists="replace")
-
-cur.execute("SELECT sum (c12) FROM drivers").fetchall()
-
+SELECT sum (c12) FROM tbl1
