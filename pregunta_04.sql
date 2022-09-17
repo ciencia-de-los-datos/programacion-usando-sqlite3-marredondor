@@ -45,5 +45,5 @@ SELECT
     c16
 FROM tbl1
 WHERE
-    K0 = SUBSTRING(c16,1,1)
+    K0 = SUBSTRING(c16,1,1);
     
