@@ -40,6 +40,8 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 -- 
-SELECT [K0], [c16]
+SELECT 
+    [K0],
+    [c16]
 FROM tbl1
-WHERE K0 = SUBSTRING(c16,1,1)    
+WHERE K0 = SUBSTR(c16,1,1)
