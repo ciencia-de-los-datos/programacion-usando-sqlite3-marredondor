@@ -40,6 +40,6 @@
 -- 
 SELECT 
     STRFTIME('%Y',C14) AS [YEAR],
-    COUNT (*) 
+    COUNT (*) AS [CANT] 
 FROM tbl1
 WHERE [YEAR] = '2018'
