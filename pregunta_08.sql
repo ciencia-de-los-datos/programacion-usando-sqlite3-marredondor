@@ -43,6 +43,6 @@
 --
 SELECT 
     strftime('%Y',C23),
-    avg(c21) AS [avg(c21)]
+    avg(c21) AS 'avg(c21)'
 FROM tbl2
 GROUP BY strftime('%Y',C23)
