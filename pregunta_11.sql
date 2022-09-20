@@ -39,7 +39,6 @@
 --  >>> Escriba su codigo a partir de este punto <<<
 -- 
 SELECT 
-    CAST(STRFTIME('%Y',C14) AS INTEGER) AS [YEAR],
-    COUNT (*) AS [CANT] 
+    COUNT(*) 
 FROM tbl1
-WHERE [YEAR] = '2018'
+WHERE STRFTIME('%Y',C14) = '2018'
