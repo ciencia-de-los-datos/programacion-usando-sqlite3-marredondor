@@ -42,3 +42,9 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --
+SELECT 
+    DISTINCT(K0) AS [K0],
+    MAX(C12) AS [MAX(c12)],
+    MIN(C12) AS [MIN(c12)]
+FROM tbl1
+GROUP BY [K0]

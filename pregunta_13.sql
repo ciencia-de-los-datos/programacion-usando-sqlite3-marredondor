@@ -43,3 +43,9 @@
 -- 
 --  >>> Escriba su codigo a partir de este punto <<<
 --  
+SELECT 
+    DISTINCT(K0) AS [K0],
+    AVG(C12) AS [avg(c12)]
+FROM tbl1
+WHERE c13 > 400 
+GROUP BY [K0]

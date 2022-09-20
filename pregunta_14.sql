@@ -43,4 +43,11 @@
 --
 --  >>> Escriba su codigo a partir de este punto <<<
 --  
+SELECT 
+    DISTINCT(T1.[K0]) AS [K0],
+    AVG(T2.[c21]) AS [avg(c21)]
+FROM tbl1 AS T1
+INNER JOIN tbl2 AS T2 ON T1.K1 = T2.K1  
+WHERE T1.c13 > 400 
+GROUP BY [K0]
 
